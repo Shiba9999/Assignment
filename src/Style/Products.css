@@ -18,7 +18,7 @@
     max-height: 200px;
     width: 100%;
     object-fit: contain;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 .product_image{
     display: flex;
@@ -31,7 +31,7 @@
 }
 .product__info{
     height: 100px;
-    margin-bottom: 15px;
+    margin-bottom:5px
 }
 .product__rating{
     display: flex;

@@ -1,0 +1,17 @@
+.cards{
+     height: 60vh;
+     width: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     flex-direction: column;
+     padding-bottom: 80px;
+     margin-bottom: 2rem;
+     margin-left: 30rem;
+}
+.image{
+     /* height: 30%;
+     width: 60%; */
+     height: 70%;
+     width: 100%;
+}

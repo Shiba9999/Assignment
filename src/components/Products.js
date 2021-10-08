@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Products.css"
+import "../Style/Products.css"
 import dataFile from "../data.json"
 import Button from '@material-ui/core/Button';
 function Products() {
@@ -11,17 +11,11 @@ function Products() {
                   <img src={dataDetails.imageURl} alt=""/> */}
                    <div className="product__info">
                   <p>{dataDetails.name}</p>
-                 
                   </div>
-          
               <div className="product_image">  
               <img  src={dataDetails.imageURl} alt=""/>
-                <button  className="button-6" variant="contained">Add to basket</button>
+                <button  className="button-6" variant="contained">Buy</button>
               </div>
-
-           
-
-          
                 </div>
 
             })}
