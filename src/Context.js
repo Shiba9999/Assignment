@@ -4,6 +4,7 @@ export const CartContext = React.createContext();
 
 
 export const initialState ={
+
     cart:[],
     product:[],
     category:[]
@@ -34,7 +35,8 @@ export  const reducer=(state,action)=>{
                         category:[...state.category,action.payload]
                       
                        
-                    }
+                    };
+                  
                     default : return state
     }
 }

@@ -1,9 +1,9 @@
 import React from 'react'
 import "../Style/Home.css"
-import Demo from './Demo'
+
 import dataFile from "../data.json"
-import Products from './Products'
 import { useCart } from '../Context'
+import Products from './Products'
 
 
 function Home() {
@@ -23,7 +23,8 @@ function Home() {
         <div className="home">
   
           <div className="filter">
-         
+         <form className="formElements">
+         <label   htmlFor="fruits"  >Fruits</label>
             <input type="checkbox" id="fruits"  onChange={(()=>{
                  dispatch({
                     type:"FILTER_PRODUCT",
@@ -32,8 +33,9 @@ function Home() {
             })
                
             } />
-            <label   htmlFor="fruits"  >Fruits</label>
+          
 
+            <label   htmlFor="Vegtables"  >Vegtables</label>
             <input type="checkbox" id="Vegtables"   onChange={(()=>{
                                   dispatch({
                                     type:"FILTER_PRODUCT",
@@ -42,15 +44,16 @@ function Home() {
                         })}
                 
              />
-            <label   htmlFor="Vegtables"  >Vegtables</label>
-
+         
             <button onClick={filterFunction}>button</button>
+            </form>
+           
 
           </div>
               
              <div className="home__row">
-                  {/* <Products/> */}
-                  <Demo/>
+                
+                  <Products  />
               
                   
                 </div>

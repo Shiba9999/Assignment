@@ -20,3 +20,11 @@
     display: flex;
     margin-left: auto;
 }
+.formElements{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 10rem;
+  padding-bottom: 10rem;
+}
