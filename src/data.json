@@ -1,0 +1,78 @@
+[ 
+
+    { 
+    
+    "name":"Potato", 
+
+    "imageURl": "https://post.healthline.com/wp-content/uploads/2020/08/766x415_Potato_Allergy-1-732x415.jpg",
+    
+    "id":1, 
+    
+    "price":30, 
+    
+    "available":1, 
+    
+    "vendor":"Himachal Pvt Ltd", 
+    
+    "category":"Vegtables" 
+    
+    }, 
+    
+    { 
+    
+    "name":"Banana", 
+
+    "imageURl":"https://cdn.mos.cms.futurecdn.net/42E9as7NaTaAi4A6JcuFwG-1200-80.jpg",
+    
+    "id":2, 
+    
+    "price":50, 
+    
+    "available":1, 
+    
+    "category":"Fruits",
+    
+    "vendor": "Organic farms"
+    
+    
+    }, 
+    
+    { 
+    
+    "name":"Drumsticks", 
+
+    "imageURl":"https://5.imimg.com/data5/XL/DE/MY-2/moringa-pod-jpg-500x500.jpg",
+
+    
+    "id":3, 
+    
+    "price":20, 
+    
+    "available":0, 
+    
+    "category":"Vegetables", 
+    
+    "vendor":"Mallikarjuna farms"
+    
+    }, 
+    
+    { 
+    
+    "name":"Orange", 
+
+    
+    "imageURl":"https://image.shutterstock.com/image-photo/ripe-orange-isolated-on-white-260nw-606022676.jpg",
+    
+    "id":4, 
+    
+    "price":25, 
+    
+    "available":1, 
+    
+    "vendor":"Nagpur farms", 
+    
+    "category":"Fruits" 
+    
+    } 
+    
+    ]
