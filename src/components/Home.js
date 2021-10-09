@@ -46,7 +46,7 @@ function Home() {
                 
              />
          
-            <button onClick={filterFunction}>button</button>
+            <button onClick={filterFunction}>Filter</button>
             </form>
           </div>
               

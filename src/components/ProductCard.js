@@ -55,7 +55,7 @@ function ProductCard({ dataDetails }) {
   
   return (
     <Card className={classes.card} key={dataDetails.id} className="cards">
-      <CardActionArea>
+      <CardActionArea className="cardAction">
         <CardMedia
           component="img"
           alt=""
@@ -77,9 +77,9 @@ function ProductCard({ dataDetails }) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-      <Typography component="p">
+      <Typography component="p" >
             Price: {dataDetails.price} rs
-            <input type="number" value={quantity} onChange={handleQuantity} />
+            <input type="number" className="quantity" value={quantity} onChange={handleQuantity} />
           </Typography>
         <Button
           className={classes.Button}
@@ -87,7 +87,7 @@ function ProductCard({ dataDetails }) {
           color="primary"
           onClick={addToBasket}
         >
-          Buy
+          Add To Cart
         </Button>
       </CardActions>
     </Card>
