@@ -12,6 +12,8 @@ import { makeStyles } from '@material-ui/styles';
 import dataFile from "../data.json"
 import "../Style/Demo.css"
 import { useCart } from '../Context';
+import ProductCard from './ProductCard';
+
 const useStyles = makeStyles((theme)=>({
 
         card: {
@@ -28,47 +30,21 @@ const useStyles = makeStyles((theme)=>({
            
 
         }
-
       
 }))
 
+
 function Products() {
+  const {state}=useCart();
     const classes = useStyles();
   
-    function addToBasket(){
-   
-    }
 
   return (
     <div className="all">
-          {dataFile.map((dataDetails,index)=>{
-          return <Card className={classes.card} className="cards">
-            <CardActionArea>
-              <CardMedia
-                
-                component="img"
-                alt=""
-                className={classes.media}
-                className="image"
-                height="140"
-                image={dataDetails.imageURl}
-             
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
-                  {dataDetails.name}
-                </Typography>
-                <Typography component="p">
-                  {dataDetails.vendor}
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button className={classes.Button} size="small" color="primary" onClick={addToBasket}>
-                Buy
-              </Button>
-            </CardActions>
-          </Card>
+        
+          {state.product.map((dataDetails)=>{
+            
+          return <ProductCard dataDetails={dataDetails}/>
        
 
             })}

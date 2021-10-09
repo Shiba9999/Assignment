@@ -2,22 +2,34 @@ import React from 'react'
 import "../Style/Header.css"
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
-
+import { useCart } from '../Context';
+import { Link } from '@material-ui/core';
+import { useHistory } from 'react-router';
 
 
 function Header() {
-
+    const history=useHistory();
+    const {state}=useCart();
     return (
         <div className="header" >
             
             <img className="header__logo" src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" />
             
             <div className="header__nav">
-                
-                <div className="header__optionBasket">
+             
+                <button className="header__optionBasket" onClick={(e)=>{
+                      e.preventDefault();
+                      history.push("/cart")
+
+                }}>
+               
                     <ShoppingBasketIcon/>
-                    <span className="header__optionLineTwo header__basketCount">0</span>
-                </div>
+                             
+                   
+                    <span className="header__optionLineTwo header__basketCount">{state.cart.length}</span>
+               
+                </button>
+          
             </div>
 
         </div>
