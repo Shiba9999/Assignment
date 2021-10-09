@@ -2,7 +2,7 @@ import React from 'react';
 
 import { makeStyles } from '@material-ui/styles';
 import dataFile from "../data.json"
-import "../Style/Demo.css"
+import "../Style/Product.css"
 import { useCart } from '../Context';
 import ProductCard from './ProductCard';
 

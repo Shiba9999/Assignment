@@ -35,7 +35,10 @@ function Cart() {
   }
   return (
     <div>
-      <h1>Cart Page</h1>
+      {/* <h1>Cart Page</h1> */}
+      <Typography variant="h4" gutterBottom component="div">
+      Cart Page
+      </Typography>
       {state.cart.map((dataDetails) => {
         return (
           <Card className={classes.card} key={dataDetails.id} className="cards">
@@ -80,7 +83,8 @@ function Cart() {
                 closeTimeoutMS={500}
               >
                 <div>{JSON.stringify(state.cart)}</div>
-                <button onClick={toggleModal}>Close modal</button>
+                {/* <button onClick={toggleModal}>Close modal</button> */}
+                <Button variant="contained" onClick={toggleModal} >Close</Button>
               </Modal>
             </CardActions>
              
@@ -88,7 +92,9 @@ function Cart() {
     
         );
       })}
-      <button onClick={toggleModal}>buy</button>
+      {/* <button onClick={toggleModal}>buy</button> */}
+      <Button variant="contained" onClick={toggleModal} >Buy</Button>
+      
     </div>
   );
 }

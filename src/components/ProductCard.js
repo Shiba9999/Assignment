@@ -10,7 +10,7 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/styles";
 import dataFile from "../data.json";
-import "../Style/Demo.css";
+import "../Style/Product.css";
 import { useCart } from "../Context";
 
 const useStyles = makeStyles((theme) => ({

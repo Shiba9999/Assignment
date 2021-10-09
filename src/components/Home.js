@@ -3,6 +3,7 @@ import "../Style/Home.css"
 import dataFile from "../data.json"
 import { useCart } from '../Context'
 import Products from './Products'
+import { Button, Typography } from '@material-ui/core'
 
 
 function Home() {
@@ -24,7 +25,10 @@ function Home() {
   
           <div className="filter">
          <form className="formElements">
-         <label   htmlFor="fruits"  >Fruits</label>
+ 
+         <Typography variant="h6" gutterBottom component="div">
+        Fruits
+      </Typography>
             <input type="checkbox"  value={state.category.includes("fruits")} id="fruits"  onChange={((e)=>{
              
                  dispatch({
@@ -34,7 +38,10 @@ function Home() {
             })
                
             } />
-            <label   htmlFor="vegetables"  >Vegtables</label>
+    
+            <Typography variant="h6" gutterBottom component="div">
+              Vegtables
+             </Typography>
             <input type="checkbox" id="vegetables" value={state.category.includes("vegetable")}  onChange={((e)=>{
                           
 
@@ -46,7 +53,7 @@ function Home() {
                 
              />
          
-            <button onClick={filterFunction}>Filter</button>
+            <Button variant="contained" onClick={filterFunction}>Filter</Button>
             </form>
           </div>
               
