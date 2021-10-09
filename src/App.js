@@ -9,6 +9,7 @@ import {
  
 } from "react-router-dom";
 import Cart from "./components/Cart";
+import CartHeader from "./components/CartHeader";
 function App() {
   return (
     <div className="App">
@@ -16,6 +17,7 @@ function App() {
         <Switch>
         
           <Route path="/cart">
+          <CartHeader />
             <Cart/>
           </Route>
 

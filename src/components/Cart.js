@@ -24,6 +24,10 @@ const useStyles = makeStyles((theme) => ({
   Button: {
     textAlign: "center",
   },
+  margin:{
+    marginLeft:"60px"
+  }
+
 }));
 
 function Cart() {
@@ -63,7 +67,7 @@ function Cart() {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Typography component="p">
+              <Typography  variant="h6" gutterBottom  component="p"  className={classes.margin}>
                 Price: {dataDetails.price} rs
               </Typography>
               <Button
